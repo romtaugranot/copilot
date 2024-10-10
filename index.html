@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+</head>
+<body>
+    <div class="opening-page">
+        <div class="image-container">
+            <img src="https://images.pond5.com/vintage-tv-and-pong-game-087539695_prevstill.jpeg" alt="Pong Game" class="welcome-image">
+        </div>
+        <div class="welcome-text">
+            <h1>Welcome to the Pong Game</h1>
+            <button onclick="startGame()">Start Game</button>
+        </div>
+    </div>
+    <div class="game-page" style="display: none;">
+        <canvas id="pongCanvas" width="800" height="400"></canvas>
+        <div id="scoreboard" class="scoreboard">Player 1: 0 | Player 2: 0</div>
+        <input type="range" id="boardSizeSlider" min="400" max="1000" value="800" class="slider">
+        <button class="return-button" onclick="returnToWelcome()">Return</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

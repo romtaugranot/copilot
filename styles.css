@@ -1,0 +1,129 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    font-family: 'Montserrat', sans-serif; /* Square, modern font */
+}
+
+canvas {
+    background: #222;
+    border: 2px solid #fff;
+    display: block;
+}
+
+.scoreboard {
+    position: absolute;
+    top: 50px; /* Center it more vertically */
+    font-size: 32px; /* Larger text */
+    color: #000;
+    text-align: center; /* Center the text */
+    width: 100%; /* Take full width */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center */
+}
+
+.slider {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%); /* Center it vertically */
+    writing-mode: bt-lr; /* Vertical slider */
+    transform: rotate(270deg) translateY(-50%); /* Rotate slider and re-center */
+    -webkit-appearance: none; /* Remove default styling */
+    width: 150px; /* Adjust width */
+    height: 5px; /* Adjust height */
+    background: #444; /* Match theme */
+    outline: none; /* Remove outline */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default thumb */
+    appearance: none;
+    width: 15px; /* Adjust size */
+    height: 15px; /* Adjust size */
+    background: #fff; /* Match theme */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.slider::-moz-range-thumb {
+    width: 15px; /* Adjust size */
+    height: 15px; /* Adjust size */
+    background: #fff; /* Match theme */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.opening-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f0f0f0;
+    height: 100vh;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
+    aspect-ratio: 16/9; /* Match the aspect ratio of the image */
+    margin-left: 20px; /* Add margin to the left */
+}
+
+.welcome-image {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.welcome-text {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333; /* Darker text color */
+}
+
+.welcome-text button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif; /* Match the website font */
+}
+
+.welcome-text button:hover {
+    background-color: #666;
+}
+
+.return-button {
+    position: absolute;
+    bottom: 20px; /* Position at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center */
+    padding: 15px 30px; /* Make it larger */
+    font-size: 20px; /* Increase font size */
+    margin-bottom: 20px; /* Add margin */
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif; /* Match the website font */
+}
+
+.return-button:hover {
+    background-color: #666;
+}
